@@ -228,6 +228,10 @@
     if (minScale > maxScale) {
         minScale = maxScale;
     }
+    
+    if (maxScale == minScale) {
+        maxScale = minScale + 1.0;
+    }
         
     self.maximumZoomScale = maxScale;
     self.minimumZoomScale = minScale;
